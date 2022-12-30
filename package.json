@@ -11,9 +11,9 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/plugin-i18n": "4.1.9",
-    "@strapi/plugin-users-permissions": "4.1.9",
-    "@strapi/provider-upload-cloudinary": "4.1.9",
+    "@strapi/plugin-i18n": "4.5.4",
+    "@strapi/plugin-users-permissions": "4.5.4",
+    "@strapi/provider-upload-cloudinary": "4.5.4",
     "@strapi/strapi": "4.5.4",
     "pg": "8.7.3"
   },
