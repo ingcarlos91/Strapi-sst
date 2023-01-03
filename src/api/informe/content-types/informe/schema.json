@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "informes",
+  "info": {
+    "singularName": "informe",
+    "pluralName": "informes",
+    "displayName": "informe",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "ROTACIÓN  DEL PERSONAL",
+        "AUSENTISMO LABORAL",
+        "RETORNO ARL",
+        "PARTICIPACIÓN LABORAL  CAPACITACIONES "
+      ],
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "targetField": "name"
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "monthlies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::monthly.monthly",
+      "mappedBy": "informe"
+    },
+    "company": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::company.company",
+      "inversedBy": "informes"
+    },
+    "yearActive": {
+      "type": "integer",
+      "required": true,
+      "min": 2000
+    },
+    "atributos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::atributo.atributo",
+      "mappedBy": "informes"
+    }
+  }
+}

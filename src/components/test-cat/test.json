@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_test_cat_tests",
+  "info": {
+    "displayName": "test",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    }
+  }
+}

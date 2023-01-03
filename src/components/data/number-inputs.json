@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_data_number_inputs",
+  "info": {
+    "displayName": "numberInputs",
+    "icon": "sort-numeric-up-alt"
+  },
+  "options": {},
+  "attributes": {
+    "numberInput": {
+      "type": "float",
+      "min": 0
+    }
+  }
+}
