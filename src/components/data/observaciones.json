@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_data_observaciones",
+  "info": {
+    "displayName": "Observaciones",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "Observaciones": {
+      "type": "richtext"
+    }
+  }
+}

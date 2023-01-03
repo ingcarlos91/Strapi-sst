@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "atributos",
+  "info": {
+    "singularName": "atributo",
+    "pluralName": "atributos",
+    "displayName": "description",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "ROTACIÓN  DEL PERSONAL",
+        "AUSENTISMO LABORAL",
+        "RETORNO ARL",
+        "PARTICIPACIÓN LABORAL  CAPACITACIONES "
+      ],
+      "required": true
+    },
+    "hasMonths": {
+      "type": "boolean",
+      "required": true
+    },
+    "abbreDescription": {
+      "type": "json",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "informes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::informe.informe",
+      "inversedBy": "atributos"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "monthlies",
+  "info": {
+    "singularName": "monthly",
+    "pluralName": "monthlies",
+    "displayName": "Monthly",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "InfoMonths": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data.mensual-info"
+    },
+    "informe": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::informe.informe",
+      "inversedBy": "monthlies"
+    },
+    "infoChart": {
+      "type": "json"
+    },
+    "hasManyCells": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}
