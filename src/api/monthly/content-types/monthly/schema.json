@@ -21,11 +21,6 @@
       "type": "uid",
       "targetField": "name"
     },
-    "InfoMonths": {
-      "type": "component",
-      "repeatable": true,
-      "component": "data.mensual-info"
-    },
     "informe": {
       "type": "relation",
       "relation": "manyToOne",
@@ -39,6 +34,10 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "InfoMonth": {
+      "type": "dynamiczone",
+      "components": ["data.mensual-info", "data.activity-months"]
     }
   }
 }

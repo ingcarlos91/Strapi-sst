@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_data_activity_months",
+  "info": {
+    "displayName": "Actividades",
+    "icon": "bars",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "first": {
+      "displayName": "TextInputs",
+      "type": "component",
+      "repeatable": true,
+      "component": "data.text-inputs"
+    },
+    "second": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data.text-inputs"
+    },
+    "third": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data.text-inputs"
+    },
+    "MES": {
+      "type": "enumeration",
+      "enum": [
+        "ENERO",
+        "FEBRERO",
+        "MARZO",
+        "ABRIL",
+        "MAYO",
+        "JUNIO",
+        "JULIO",
+        "AGOSTO",
+        "SEPTIEMBRE",
+        "OCTUBRE",
+        "NOVIEMBRE",
+        "DICIEMBRE"
+      ],
+      "required": true
+    }
+  }
+}
