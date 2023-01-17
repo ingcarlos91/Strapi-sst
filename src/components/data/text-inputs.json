@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_data_text_inputs",
+  "info": {
+    "displayName": "TextInputs",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    }
+  }
+}

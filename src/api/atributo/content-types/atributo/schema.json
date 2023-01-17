@@ -18,7 +18,8 @@
         "ROTACIÓN  DEL PERSONAL",
         "AUSENTISMO LABORAL",
         "RETORNO ARL",
-        "PARTICIPACIÓN LABORAL  CAPACITACIONES "
+        "PARTICIPACIÓN LABORAL  CAPACITACIONES ",
+        "ACTIVIDADES"
       ],
       "required": true
     },
